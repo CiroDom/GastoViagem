@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_distancia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/grande"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_distancia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Distância total" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_preco"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/grande"
+        app:layout_constraintTop_toBottomOf="@id/txt_distancia"
+        app:layout_constraintStart_toStartOf="@id/txt_distancia"
+        app:layout_constraintEnd_toEndOf="@id/txt_distancia"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_preco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Preço da gasolina" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_consumo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/grande"
+        app:layout_constraintTop_toBottomOf="@id/txt_preco"
+        app:layout_constraintStart_toStartOf="@id/txt_distancia"
+        app:layout_constraintEnd_toEndOf="@id/txt_distancia"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_consumo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Km/L" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView android:id="@+id/text_view_gasto_texto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txt_consumo"
+        android:layout_margin="@dimen/grande"
+        android:text="gasto total de:"
+        android:textSize="18sp"
+        android:textAllCaps="true"
+        android:gravity="center_horizontal"
+        />
+
+    <TextView android:id="@+id/text_view_gasto_valor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/grande"
+        app:layout_constraintTop_toBottomOf="@id/text_view_gasto_texto"
+        android:text="@string/string_gasto_valor"
+        android:textSize="40sp"
+        android:gravity="center_horizontal"
+        />
+
+    <Button android:id="@+id/button_calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/grande"
+        app:layout_constraintTop_toBottomOf="@id/text_view_gasto_valor"
+        android:padding="@dimen/grande"
+        android:text="calcular"
+        android:textSize="18sp"
+        android:textAllCaps="true"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
