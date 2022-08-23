@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/orange_100"
     tools:context=".MainActivity">
 
     <com.google.android.material.textfield.TextInputLayout
@@ -20,6 +21,7 @@
             android:id="@+id/edit_distancia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
             android:hint="Distância total" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -37,6 +39,7 @@
             android:id="@+id/edit_preco"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
             android:hint="Preço da gasolina" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -54,7 +57,8 @@
             android:id="@+id/edit_consumo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Km/L" />
+            android:inputType="numberDecimal"
+            android:hint="km/l" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView android:id="@+id/text_view_gasto_texto"
@@ -65,6 +69,7 @@
         android:text="gasto total de:"
         android:textSize="18sp"
         android:textAllCaps="true"
+        android:textStyle="bold"
         android:gravity="center_horizontal"
         />
 
@@ -75,8 +80,7 @@
         app:layout_constraintTop_toBottomOf="@id/text_view_gasto_texto"
         android:text="@string/string_gasto_valor"
         android:textSize="40sp"
-        android:gravity="center_horizontal"
-        />
+        android:gravity="center_horizontal" />
 
     <Button android:id="@+id/button_calcular"
         android:layout_width="match_parent"
@@ -86,6 +90,7 @@
         android:padding="@dimen/grande"
         android:text="calcular"
         android:textSize="18sp"
+        android:textColor="@color/orange_100"
         android:textAllCaps="true"
         />
 
