@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="amber_500">#FFC107</color>
-    <color name="amber_700">#FFA000</color>
-    <color name="orange_200">#FFCC80</color>
-    <color name="orange_900">#E65100</color>
-    <color name="black">#FF000000</color>
-    <color name="orange_100">#fff3e0</color>
-    <color name="brown_900">#3e2723</color>
+
+    <color name="primary_amber_200">#ffe082</color>
+    <color name="primary_amber_500">#ffc107</color>
+    <color name="primary_amber_700">#FFA000</color>
+
+    <color name="secondary_deeporange_200">#ffab91</color>
+    <color name="secondary_deeporange_900">#bf360c</color>
+
+    <color name="amber_50">#fff8e1</color>
+    <color name="grey_900">#212121</color>
 </resources>

@@ -2,13 +2,13 @@
     <!-- Base application theme. -->
     <style name="Theme.GastoGasolinaViagem" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/amber_500</item>
-        <item name="colorPrimaryVariant">#FFA000</item>
-        <item name="colorOnPrimary">@color/orange_100</item>
+        <item name="colorPrimary">@color/primary_amber_500</item>
+        <item name="colorPrimaryVariant">@color/primary_amber_700</item>
+        <item name="colorOnPrimary">@color/amber_50</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/orange_200</item>
-        <item name="colorSecondaryVariant">@color/orange_900</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondary">@color/secondary_deeporange_200</item>
+        <item name="colorSecondaryVariant">@color/secondary_deeporange_900</item>
+        <item name="colorOnSecondary">@color/grey_900</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
